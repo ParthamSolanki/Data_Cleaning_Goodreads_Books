@@ -1,10 +1,13 @@
 # Data cleaning project
 
-This is a data cleaning project using goodreads books dataset from kaggle.
+This project focuses on cleaning and standardizing the Goodreads Books dataset from Kaggle to make it more suitable for analysis. The process involves identifying and handling duplicates, standardizing text data, and converting data types for better usability.
 
-[Link for the dataset](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks)
+## Dataset
+The dataset used in this project can be found on Kaggle - [Goodreads Books dataset](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks)
 
-We are going to go through the data and make it more workable. I will also describe the steps as I am going through the query.
+## Tools
+- MySQL for all data cleaning operations
+- SQL for writing and executing the data manipulation queries
 
 Steps taken on a whole, exact code can be found in the SQLScriptFile.
 1. Create a copy table with name `books_c` of the raw file `books` to work with as we should not make changes directly to the source files.
@@ -18,4 +21,5 @@ Steps taken on a whole, exact code can be found in the SQLScriptFile.
 7. Checking for NULL and blank entries in a couple of the columns and populating them if needed or possible.
 8. Checking datatype of columns and then changing the datatype and format of publication_date from text to date.
 
-This is all we are going to do in this project to get the data to a more usable format.
+## Conclusion
+By following these steps, the datasets was transformed into a cleaner and A more reliable format for further analysis, reporting or integration with other datasets.
